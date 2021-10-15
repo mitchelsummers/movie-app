@@ -8,3 +8,6 @@
 Actor.create({first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock"})
 Actor.create({first_name: "Tom", last_name: "Cruise", known_for: "being nuts"})
 Actor.create({first_name: "Seth", last_name: "Rogen", known_for: "being high"})
+Movie.create({title: "Jumanji", year: 1995, plot: "jumanji dude"})
+Movie.create({title: "Jaws", year: 1975, plot: "shark look out"})
+Movie.create({title: "The Matrix", year: 1999, plot: "red pilled"})
