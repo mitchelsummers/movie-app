@@ -40,8 +40,14 @@ class MoviesController < ApplicationController
   end
 
   def destroy
-    movie = Mobie.find_by(id: params[:id])
+    movie = Movie.find_by(id: params[:id])
     movie.destroy
     render json: {message: "Movie destroyed."}
   end
+
+  def genre_names
+    genres = Genre.all
+    render json: genres.as_json
+  end
+
 end

@@ -15,4 +15,6 @@ Rails.application.routes.draw do
 
   post "/sessions" => "sessions#create"
 
+  get "movie_genres" => "movies#genre_names"
+
 end
